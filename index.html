@@ -238,7 +238,7 @@
 
                     <div class="feature-card">
                         <div class="feature-image">
-                            <img src="images/chlorine.jpg" alt="Chlorine Dioxide">    
+                            <img src="images/chlorine.jpg" alt="Chlorine Dioxide">
                         </div>
                         <div class="feature-content">
                             <h3>Industrial Chlorine Dioxide</h3>
@@ -286,41 +286,64 @@
 
 
         <section class="photos">
-                <div class="container"> 
-                    <h3>Our Work</h3>
-                    <div class="product-carousel">
-                        <div class="carousel-container">
-                            <div class="carousel-track">
-                                <div class="product-slide">
-                                    <img src="images/repair-1.jpg" alt="Repair Work" class="slide-image">
-                                </div>
-                                <div class="product-slide">
-                                    <img src="images/electrical-motors.jpg" alt="Electrical Motors" class="slide-image">
-                                </div>
-                                <div class="product-slide">
-                                    <img src="images/gearboxes.jpg" alt="Gearboxes" class="slide-image">
-                                </div>
-                                <div class="product-slide">
-                                    <img src="images/dosing-pumps.jpg" alt="Dosing Pumps" class="slide-image">
-                                </div>
-                                <div class="product-slide">
-                                    <img src="images/industrial-fans.jpg" alt="Industrial Fans & Service Parts" class="slide-image">
-                                </div>
+            <div class="container">
+                <h3>Our Work</h3>
+                <div class="product-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="product-slide">
+                                <img src="images/ourwork.jpeg" alt="Repair Work" class="slide-image">
+                            </div>
+                            <div class="product-slide">
+                                <img src="images/ourwork1.jpeg" alt="Repair Work" class="slide-image">
+                            </div>
+                            <div class="product-slide">
+                                <img src="images/ourwork2.jpeg" alt="Repair Work" class="slide-image">
+                            </div>
+                            <div class="product-slide">
+                                <img src="images/ourwork3.jpeg" alt="Repair Work" class="slide-image">
+                            </div>
+                            <div class="product-slide">
+                                <img src="images/ourwork4.jpeg" alt="Repair Work" class="slide-image">
+                            </div>
+                            <div class="product-slide">
+                                <img src="images/ourwork5.jpeg" alt="Repair Work" class="slide-image">
+                            </div>
+                            <div class="product-slide">
+                                <img src="images/ourwork6.jpeg" alt="Repair Work" class="slide-image">
+                            </div>
+                            <div class="product-slide">
+                                <img src="images/ourwork7.jpeg" alt="Repair Work" class="slide-image">
+                            </div>
+                            <div class="product-slide">
+                                <img src="images/ourwork8.jpeg" alt="Repair Work" class="slide-image">
+                            </div>
+                            <div class="product-slide">
+                                <img src="images/ourwork9.jpeg" alt="Repair Work" class="slide-image">
+                            </div>
+                            <div class="product-slide">
+                                <img src="images/ourwork10.jpeg" alt="Repair Work" class="slide-image">
                             </div>
                         </div>
-                        
-                        <button class="carousel-btn carousel-btn-prev" onclick="moveSlide(-1)"></button>
-                        <button class="carousel-btn carousel-btn-next" onclick="moveSlide(1)"></button>
-                        
-                        <div class="carousel-dots">
-                            <span class="dot active" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
-                            <span class="dot" onclick="currentSlide(5)"></span>
-                        </div>
+                    </div>
+
+                    <button class="carousel-btn carousel-btn-prev" onclick="moveSlide(-1)"></button>
+                    <button class="carousel-btn carousel-btn-next" onclick="moveSlide(1)"></button>
+
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section id="contact" class="contact">
@@ -418,7 +441,7 @@
         const slideInterval = 4000; // 4 seconds
 
         // Initialize carousel
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             showSlide(currentSlideIndex);
             startAutoSlide();
         });
@@ -427,7 +450,7 @@
         function showSlide(slideIndex) {
             const track = document.querySelector('.carousel-track');
             const dots = document.querySelectorAll('.dot');
-            
+
             // Wrap around logic
             if (slideIndex > totalSlides) {
                 currentSlideIndex = 1;
@@ -436,11 +459,11 @@
             } else {
                 currentSlideIndex = slideIndex;
             }
-            
+
             // Move track
             const translateX = -(currentSlideIndex - 1) * 20;
             track.style.transform = `translateX(${translateX}%)`;
-            
+
             // Update dots
             dots.forEach((dot, index) => {
                 dot.classList.remove('active');
