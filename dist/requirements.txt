@@ -1,0 +1,7 @@
+# No external dependencies required for the basic web server
+# Python's built-in http.server module is used
+
+# Optional: If you want to add more functionality, you can uncomment these:
+# flask>=2.0.0        # For a more robust web framework
+# pillow>=8.0.0       # For image processing
+# requests>=2.25.0    # For making HTTP requests
