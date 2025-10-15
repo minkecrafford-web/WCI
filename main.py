@@ -11,7 +11,7 @@ import webbrowser
 from threading import Timer
 
 # Configuration
-PORT = 8002
+PORT = 8001
 DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 
 class CustomHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
