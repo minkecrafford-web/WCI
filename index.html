@@ -604,36 +604,36 @@
         if (carousel) {
             carousel.addEventListener('mouseenter', stopAutoSlide);
             carousel.addEventListener('mouseleave', startAutoSlide);
-        }
 
-        // Touch/swipe support for mobile
-        let startX = 0;
-        let endX = 0;
+            // Touch/swipe support for mobile
+            let startX = 0;
+            let endX = 0;
 
-        carousel.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-            stopAutoSlide();
-        });
+            carousel.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                stopAutoSlide();
+            });
 
-        carousel.addEventListener('touchmove', (e) => {
-            endX = e.touches[0].clientX;
-        });
+            carousel.addEventListener('touchmove', (e) => {
+                endX = e.touches[0].clientX;
+            });
 
-        carousel.addEventListener('touchend', () => {
-            const difference = startX - endX;
-            const threshold = 50;
+            carousel.addEventListener('touchend', () => {
+                const difference = startX - endX;
+                const threshold = 50;
 
-            if (Math.abs(difference) > threshold) {
-                if (difference > 0) {
-                    // Swipe left - next slide
-                    showSlide(currentSlideIndex + 1);
-                } else {
-                    // Swipe right - previous slide
-                    showSlide(currentSlideIndex - 1);
+                if (Math.abs(difference) > threshold) {
+                    if (difference > 0) {
+                        // Swipe left - next slide
+                        showSlide(currentSlideIndex + 1);
+                    } else {
+                        // Swipe right - previous slide
+                        showSlide(currentSlideIndex - 1);
+                    }
                 }
-            }
-            startAutoSlide();
-        });
+                startAutoSlide();
+            });
+        }
     </script>
 
 </body>
