@@ -2498,13 +2498,13 @@ footer a.footer-name:hover {
 
 .carousel-track {
     display: flex;
-    width: 1100%;
+    width: 1400%;
     height: 100%;
     transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .product-slide {
-    flex: 0 0 9.09%;
+    flex: 0 0 7.14%;
     height: 100%;
     position: relative;
 }
