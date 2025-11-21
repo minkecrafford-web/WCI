@@ -1984,9 +1984,18 @@ footer a {
     font-weight: 500;
 }
 
+footer a.footer-name {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 footer a:hover {
     color: var(--accent-color);
     text-decoration: underline;
+}
+
+footer a.footer-name:hover {
+    color: var(--dark-navy);
 }
 
 /* Desktop Large */
