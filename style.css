@@ -1984,9 +1984,38 @@ footer a {
     font-weight: 500;
 }
 
+footer .footer-name-section {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 footer a.footer-name {
     color: var(--primary-color);
     font-weight: 600;
+}
+
+footer .footer-icons {
+    display: inline-flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+footer a.footer-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+}
+
+footer a.footer-icon:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+    transform: translateY(-2px);
 }
 
 footer a:hover {
